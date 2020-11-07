@@ -1,0 +1,11 @@
+ls|system|1604720244
+pwd|system|1604720245
+show|internal|1604720248
+mkdir -p dist/files|system|1604720261
+vim dist/files/a.c|system|1604720272
+pwd|system|1604720284
+[A[A[B[B:logs show|system|1604720290
+show|internal|1604720297
+git status --oneline|system|1604720311
+git log --oneline|system|1604720340
+git log --oneline|system|1604720347
