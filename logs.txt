@@ -9,3 +9,13 @@ show|internal|1604720297
 git status --oneline|system|1604720311
 git log --oneline|system|1604720340
 git log --oneline|system|1604720347
+ls|system|1604722383
+pwd|system|1604722384
+ls|system|1604722385
+mkdir important|system|1604722389
+mkdir useless|system|1604722392
+touch important/file.txt|system|1604722398
+touch useless/trash.txt|system|1604722406
+ls|system|1604722408
+ls -R|system|1604722410
+tree .|system|1604722417
