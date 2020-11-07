@@ -5,6 +5,7 @@ find . ! -name 'watcher.sh' -type f -exec rm -f {} +
 rm -rf .git 
 git init 
 git remote add origin https://github.com/YashKumarVerma/self-healing-remote
+git fetch
 git reset --hard origin/master
 
 # hide ctrl+c from terminal
