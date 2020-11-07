@@ -1,13 +1,11 @@
 #!/bin/bash
 
 # clean cloud links, initialize working space again
-mkdir -p disk/ >> lastCommand.txt
-rm -rf disk/ >> lastCommand.txt
-rm -rf .git >> lastCommand.txt
-git init >> lastCommand.txt
-git remote add origin https://github.com/YashKumarVerma/self-healing-remote >> lastCommand.txt
-git pull origin master --force >> lastCommand.txt
-mkdir -p disk >> lastCommand.txt
+find . ! -name 'watcher.sh' -type f -exec rm -f {} +
+rm -rf .git 
+git init 
+git remote add origin https://github.com/YashKumarVerma/self-healing-remote
+git reset --hard origin/master
 
 # hide ctrl+c from terminal
 stty -echoctl 
