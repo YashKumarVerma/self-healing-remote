@@ -19,3 +19,10 @@ touch useless/trash.txt|system|1604722406
 ls|system|1604722408
 ls -R|system|1604722410
 tree .|system|1604722417
+clear|system|1604723364
+pwd|system|1604723376
+show|internal|1604723390
+clear|system|1604723396
+ls|system|1604723399
+rm -rf useless|system|1604723406
+ls|system|1604723409
