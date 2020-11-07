@@ -2,14 +2,14 @@
 
 # clean cloud links, initialize working space again
 find . ! -name 'watcher.sh' -type f -exec rm -f {} +
-rm -rf .git 
-git init 
+rm -rf .git
+git init
 git remote add origin https://github.com/YashKumarVerma/self-healing-remote
 git fetch
 git reset --hard origin/master
 
 # hide ctrl+c from terminal
-stty -echoctl 
+stty -echoctl
 
 # function called by trap
 other_commands() {
@@ -17,10 +17,10 @@ other_commands() {
     printf "\r System Crashed !\n"
 
     # reset to last checkpoint
-    printf "Since system crashed, reverting to last checkpoint"
+    printf "Since system crashed, reverting to last checkpoint\n"
     git reset --hard HEAD >> lastCommand.txt
     if [ $? -eq 0 ]; then
-        printf "Successfully restored last checkpoint state\n"
+        printf "Successfully restored last checkpoint from cloud\n"
     else
         printf "Error restoring last checkpoint\n"
         exit;
