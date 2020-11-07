@@ -26,3 +26,7 @@ clear|system|1604723396
 ls|system|1604723399
 rm -rf useless|system|1604723406
 ls|system|1604723409
+ls|system|1604728791
+clear|system|1604728795
+ls|system|1604728796
+touch newFile.txt|system|1604728812
